@@ -1,5 +1,24 @@
-> **Fork attribution:** This codebase is a snapshot of `ourin-baileys@9.0.21`, originally published by LuckyArch / Ourin. The original MIT `LICENSE` is retained. This fork adds propagation of `gifPlayback` for video media in Dugong interactive messages and interactive buttons.
+skip to:contentpackage search
 
+Pro
+Teams
+Pricing
+Documentation
+npm
+Search packages
+Search
+ourin-baileys
+TypeScript icon, indicating that this package has built-in type declarations
+9.0.21 • Public • Published 2 months ago
+/ourin-baileys/README.md
+/
+ourin-baileys
+/
+README.md
+
+Back
+1658 LOC
+49.9 kB
 <div align="center">
 
 <img src="https://files.catbox.moe/4rft6r.png" alt="ourin-baileys banner" width="100%" />
@@ -1658,5 +1677,40 @@ MIT © [LuckyArch](https://github.com/LuckyArch)
 [⭐ Star this repo](https://github.com/LuckyArch/ourin-baileys) · [🐛 Report Bug](https://github.com/LuckyArch/ourin-baileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/ourin-baileys/issues)
 
 </div>
-#   d p w o f f c B a i l e y s  
- 
+Package Sidebar
+Install
+npm i ourin-baileys
+
+
+Weekly Downloads
+2,694
+
+Version
+9.0.21
+
+License
+MIT
+
+Last publish
+2 months ago
+
+Collaborators
+hanya_zann
+Analyze security with SocketCheck bundle sizeView package healthExplore dependencies
+Report malware
+Footer
+Support
+Help
+Advisories
+Status
+Contact npm
+Company
+About
+Blog
+Press
+Terms & Policies
+Policies
+Terms of Use
+Code of Conduct
+Privacy
+Viewing ourin-baileys version 9.0.21
