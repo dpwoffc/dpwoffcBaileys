@@ -1,23 +1,4 @@
 
-Pro
-Teams
-Pricing
-Documentation
-npm
-Search packages
-Search
-ourin-baileys
-TypeScript icon, indicating that this package has built-in type declarations
-9.0.21 • Public • Published 2 months ago
-/ourin-baileys/README.md
-/
-ourin-baileys
-/
-README.md
-
-Back
-1658 LOC
-49.9 kB
 <div align="center">
 
 <img src="https://files.catbox.moe/4rft6r.png" alt="ourin-baileys banner" width="100%" />
