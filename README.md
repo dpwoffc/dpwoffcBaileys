@@ -1,4 +1,3 @@
-skip to:contentpackage search
 
 Pro
 Teams
