@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 97132ae (chore: remove all ourin credit because not response from ourin author)
 <div align="center">
 
 <img src="https://" alt="dpwoffcBaileys" width="100%" />
