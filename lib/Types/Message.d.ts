@@ -280,6 +280,18 @@ export type AnyRegularMessageContent = (
       body?: string;
       footer?: string;
     }
+  | {
+      businessPaymentMessage: {
+        /** A saved message containing a native-flow review_and_pay button. */
+        template: WAMessage | proto.IMessage;
+        bankName?: string;
+        accountName?: string;
+        accountNumber?: string;
+        bodyText?: string;
+        footerText?: string;
+        additionalText?: string;
+      };
+    }
   | ({
       stickerPack: StickerPackContent;
     } & Mentionable &

@@ -11,6 +11,9 @@ export declare class Dugong {
     sock: any,
   );
   detectType(content: any): string | null;
+  handleBusinessPayment(content: any): Promise<{
+    interactiveMessage: proto.Message.IInteractiveMessage;
+  }>;
   handlePayment(
     content: any,
     quoted: any,

@@ -1332,6 +1332,25 @@ const communities = await sock.communityFetchAllParticipating();
 
 ### Business Methods
 
+#### Business payment message
+
+Send a business `review_and_pay` message using a saved message as its button template. The bank details are added to the message body; the original button parameters are preserved.
+
+```js
+await sock.sendMessage(jid, {
+  businessPaymentMessage: {
+    // A saved WAMessage or proto.IMessage containing a review_and_pay button
+    template: savedPaymentTemplate,
+    bankName: "BCA",
+    accountName: "Example Store",
+    accountNumber: "1234567890",
+    additionalText: "Cantumkan nomor pesanan pada berita transfer.",
+    // bodyText: "Optional replacement for the template body",
+    // footerText: "Optional replacement for the template footer",
+  },
+});
+```
+
 ```js
 // Catalog
 const { products, nextPageCursor } = await sock.getCatalog({
