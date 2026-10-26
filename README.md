@@ -183,7 +183,7 @@ Add to `package.json`:
 ```json
 {
   "dependencies": {
-    "dpwoffc": "npm:dpwoffcBaileys@latest"
+    "dpwoffc": "github:dpwoffcBaileys@latest"
   }
 }
 ```
