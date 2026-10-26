@@ -4,8 +4,8 @@
 
 ### Modded Baileys — Interactive Messages, AI Rich Responses, Albums & More
 
-[![npm version](https://img.shields.io/npm/v/dpwoffc-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
-[![npm downloads](https://img.shields.io/npm/dm/dpwoffc-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
+[![npm version](https://img.shields.io/npm/v/dpwoffcBaileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
+[![npm downloads](https://img.shields.io/npm/dm/dpwoffcBaileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20.0.0-339933?logo=node.js&logoColor=white&style=for-the-badge)](https://nodejs.org)
 [![ESM](https://img.shields.io/badge/ESM-only-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)](#)
@@ -15,7 +15,7 @@
 **A modded build of [WhiskeySockets/Baileys](https://github.com/WhiskeySockets/Baileys)**
 with native support for interactive messages, album messages, unified rich responses, newsletter helpers, status mentions, and additional business/community utilities.
 
-**Rebuild and add somethink from [dpwoffc-baileys] (https://www.npmjs.com/package/dpwoffc-baileys)**
+**Rebuild and add somethink from [dpwoffcBaileys] (https://www.npmjs.com/package/dpwoffcBaileys)**
 Add a somethink about WhatsApp Business f   
 
 This repository is a **distribution/build repo** for `dpwoffcBaileys`.
@@ -50,7 +50,7 @@ It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, 
 - **Example Usage:**
 
   ```javascript
-  import { ORich } from 'dpwoffc-baileys';
+  import { ORich } from 'dpwoffcBaileys';
 
   const dpwoffc = new ORich(sock)
     .addText('Hello from ORich AI!')
@@ -141,7 +141,7 @@ It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, 
   - `sharp`, `jimp`, `audio-decode`, `link-preview-js` for optional media/rich utilities
 
 > [!IMPORTANT]
-> `dpwoffc-baileys` is **ESM-only**. CommonJS projects will need migration or dynamic import wrappers.
+> `dpwoffcBaileys` is **ESM-only**. CommonJS projects will need migration or dynamic import wrappers.
 
 ---
 
@@ -167,7 +167,7 @@ If you are documenting or integrating this project, treat `lib/index.js` and `li
 ### From NPM
 
 ```bash
-npm install dpwoffc-baileys
+npm install dpwoffcBaileys
 ```
 
 Recommended companion packages for examples in this README:
@@ -183,7 +183,7 @@ Add to `package.json`:
 ```json
 {
   "dependencies": {
-    "dpwoffc": "npm:dpwoffc-baileys@latest"
+    "dpwoffc": "npm:dpwoffcBaileys@latest"
   }
 }
 ```
@@ -218,18 +218,18 @@ Ensure `package.json` has `"type": "module"`:
   "name": "my-bot",
   "type": "module",
   "dependencies": {
-    "dpwoffc": "npm:dpwoffc-baileys@latest"
+    "dpwoffc": "npm:dpwoffcBaileys@latest"
   }
 }
 ```
 
 > [!IMPORTANT]
-> **Required**: `"type": "module"` — dpwoffc-baileys is ESM-only. Without this, imports will fail.
+> **Required**: `"type": "module"` — dpwoffcBaileys is ESM-only. Without this, imports will fail.
 
 ### 2. Install Dependencies
 
 ```bash
-npm install dpwoffc-baileys pino qrcode-terminal
+npm install dpwoffcBaileys pino qrcode-terminal
 ```
 
 ### 3. Create `index.js`
@@ -239,7 +239,7 @@ import makeWASocket, {
   useMultiFileAuthState,
   DisconnectReason,
   Browsers,
-} from "dpwoffc-baileys";
+} from "dpwoffcBaileys";
 import pino from "pino";
 import qrcode from "qrcode-terminal";
 
@@ -429,7 +429,7 @@ console.log("Pairing code:", code); // e.g. "A1B2-C3D4"
 **Authentication State:**
 
 ```js
-import { useMultiFileAuthState } from "dpwoffc-baileys";
+import { useMultiFileAuthState } from "dpwoffcBaileys";
 
 const { state, saveCreds } = await useMultiFileAuthState("./session");
 // state.creds → credentials (me, platform, noise keys, etc.)
@@ -444,7 +444,7 @@ import {
   BufferJSON,
   initAuthCreds,
   makeCacheableSignalKeyStore,
-} from "dpwoffc-baileys";
+} from "dpwoffcBaileys";
 
 const credsStore = new Map();
 const keyStoreData = new Map();
@@ -503,7 +503,7 @@ import {
   DisconnectReason,
   fetchLatestBaileysVersion,
   makeCacheableSignalKeyStore,
-} from "dpwoffc-baileys";
+} from "dpwoffcBaileys";
 
 const { version, isLatest } = await fetchLatestBaileysVersion();
 console.log(version, isLatest);
@@ -513,12 +513,12 @@ console.log(version, isLatest);
 
 ### VoIP (Voice Calls)
 
-Modul VoIP kini terintegrasi langsung di `dpwoffc-baileys` menggunakan `VoipClient` dan memanfaatkan *shared socket* (tanpa double pairing). Aset WebAssembly sudah built-in.
+Modul VoIP kini terintegrasi langsung di `dpwoffcBaileys` menggunakan `VoipClient` dan memanfaatkan *shared socket* (tanpa double pairing). Aset WebAssembly sudah built-in.
 
 **Inisiasi VoIP Client:**
 
 ```js
-import { VoipClient, CallState } from "dpwoffc-baileys";
+import { VoipClient, CallState } from "dpwoffcBaileys";
 
 // Lakukan ini SETELAH connection === "open"
 if (!global.voipClient) {
@@ -999,13 +999,13 @@ await sock.sendLinkV2(
   "Search results:\n- {{IE_0}}Official docs{{/IE_0}}\n- {{IE_1}}GitHub repo{{/IE_1}}",
   [
     {
-      url: "https://www.npmjs.com/package/dpwoffc-baileys",
+      url: "https://www.npmjs.com/package/dpwoffcBaileys",
       displayName: "Official docs",
       sourceDisplayName: "npm",
       sourceSubtitle: "package registry",
     },
     {
-      url: "https://github.com/LuckyArch/dpwoffc-baileys",
+      url: "https://github.com/LuckyArch/dpwoffcBaileys",
       displayName: "GitHub repo",
       sourceDisplayName: "github",
       sourceSubtitle: "source hosting",
@@ -1013,7 +1013,7 @@ await sock.sendLinkV2(
   ],
   quoted,
   {
-    headerText: "dpwoffc-baileys",
+    headerText: "dpwoffcBaileys",
     footer: "Reference links",
     searchEngine: "MAME",
   },
@@ -1577,7 +1577,7 @@ import {
 
   // Types
   WASocket,
-} from "dpwoffc-baileys";
+} from "dpwoffcBaileys";
 ```
 
 > [!NOTE]
@@ -1610,7 +1610,7 @@ Important build notes:
 
 ## 🔀 Differences from Official Baileys
 
-| Area                 | Official Baileys v7 | dpwoffc-baileys                            |
+| Area                 | Official Baileys v7 | dpwoffcBaileys                            |
 | -------------------- | ------------------- | ---------------------------------------- |
 | Interactive messages | No native support   | Full support via Dugong                  |
 | Album messages       | Not supported       | Multi-media albums                       |
@@ -1656,12 +1656,12 @@ MIT © [LuckyArch](https://github.com/LuckyArch)
 
 **Made with 💚 by Zann**
 
-[⭐ Star this repo](https://github.com/LuckyArch/dpwoffc-baileys) · [🐛 Report Bug](https://github.com/LuckyArch/dpwoffc-baileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/dpwoffc-baileys/issues)
+[⭐ Star this repo](https://github.com/LuckyArch/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/LuckyArch/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/dpwoffcBaileys/issues)
 
 </div>
 Package Sidebar
 Install
-npm i dpwoffc-baileys
+npm i dpwoffcBaileys
 
 
 Weekly Downloads
@@ -1695,4 +1695,4 @@ Policies
 Terms of Use
 Code of Conduct
 Privacy
-Viewing dpwoffc-baileys version 9.0.21
+Viewing dpwoffcBaileys version 9.0.21
