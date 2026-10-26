@@ -15,7 +15,7 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
     relayMessage: (jid: string, message: proto.IMessage, { messageId: msgId, participant, additionalAttributes, additionalNodes, useUserDevicesCache, useCachedGroupMetadata, statusJidList, }: MessageRelayOptions) => Promise<string>;
     sendReceipt: (jid: string, participant: string | undefined, messageIds: string[], type: MessageReceiptType) => Promise<void>;
     sendReceipts: (keys: WAMessageKey[], type: MessageReceiptType) => Promise<void>;
-    ourin: import("./dugong.js").Dugong;
+    dpwoffc: import("./dugong.js").Dugong;
     readMessages: (keys: WAMessageKey[]) => Promise<void>;
     refreshMediaConn: (forceGet?: boolean) => Promise<import("../Types/index.js").MediaConnInfo>;
     waUploadToServer: import("../Types/index.js").WAMediaUploadFunction;

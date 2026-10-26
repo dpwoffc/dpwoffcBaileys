@@ -1,5 +1,5 @@
 {
-  "name": "ourin-baileys",
+  "name": "dpwoffc-baileys",
   "type": "module",
   "version": "9.0.21",
   "description": "Modded Baileys v7 with interactive message, album, newsletter, and VoIP support",
@@ -18,7 +18,7 @@
     "whatsapp",
     "whatsapp-api",
     "whatsapp-bot",
-    "ourin-md",
+    "dpwoffc-md",
     "multi-device",
     "bot",
     "automation",

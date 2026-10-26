@@ -81,7 +81,7 @@ export declare const makeBusinessSocket: (config: SocketConfig) => {
     keys: import("../index.js").WAMessageKey[],
     type: import("../index.js").MessageReceiptType,
   ) => Promise<void>;
-  ourin: import("./dugong.js").Dugong;
+  dpwoffc: import("./dugong.js").Dugong;
   readMessages: (keys: import("../index.js").WAMessageKey[]) => Promise<void>;
   refreshMediaConn: (
     forceGet?: boolean,

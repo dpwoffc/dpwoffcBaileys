@@ -187,7 +187,7 @@ export declare const makeCommunitiesSocket: (config: SocketConfig) => {
     keys: WAMessageKey[],
     type: import("../Types/index.js").MessageReceiptType,
   ) => Promise<void>;
-  ourin: import("./dugong.js").Dugong;
+  dpwoffc: import("./dugong.js").Dugong;
   readMessages: (keys: WAMessageKey[]) => Promise<void>;
   refreshMediaConn: (
     forceGet?: boolean,

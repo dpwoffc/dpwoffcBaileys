@@ -53,7 +53,7 @@ export declare const makeMessagesSocket: (config: SocketConfig) => {
     keys: WAMessageKey[],
     type: MessageReceiptType,
   ) => Promise<void>;
-  ourin: Dugong;
+  dpwoffc: Dugong;
   readMessages: (keys: WAMessageKey[]) => Promise<void>;
   refreshMediaConn: (forceGet?: boolean) => Promise<MediaConnInfo>;
   waUploadToServer: import("../Types/index.js").WAMediaUploadFunction;

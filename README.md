@@ -1,12 +1,15 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 97132ae (chore: remove all ourin credit because not response from ourin author)
 <div align="center">
 
-<img src="https://files.catbox.moe/4rft6r.png" alt="ourin-baileys banner" width="100%" />
+<img src="https://" alt="dpwoffcBaileys" width="100%" />
 
 ### Modded Baileys — Interactive Messages, AI Rich Responses, Albums & More
 
-[![npm version](https://img.shields.io/npm/v/ourin-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com/package/ourin-baileys)
-[![npm downloads](https://img.shields.io/npm/dm/ourin-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://www.npmjs.com/package/ourin-baileys)
+[![npm version](https://img.shields.io/npm/v/dpwoffc-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
+[![npm downloads](https://img.shields.io/npm/dm/dpwoffc-baileys?color=CB3837&logo=npm&logoColor=white&style=for-the-badge)](https://github.com/dpwoffc)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20.0.0-339933?logo=node.js&logoColor=white&style=for-the-badge)](https://nodejs.org)
 [![ESM](https://img.shields.io/badge/ESM-only-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)](#)
@@ -16,8 +19,11 @@
 **A modded build of [WhiskeySockets/Baileys](https://github.com/WhiskeySockets/Baileys)**
 with native support for interactive messages, album messages, unified rich responses, newsletter helpers, status mentions, and additional business/community utilities.
 
-This repository is a **distribution/build repo** for `ourin-baileys`.
-It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, and is intended to be consumed directly from npm or as a vendored dependency inside the **Ourin-MD** ecosystem.
+**Rebuild and add somethink from [dpwoffc-baileys] (https://www.npmjs.com/package/dpwoffc-baileys)**
+Add a somethink about WhatsApp Business f   
+
+This repository is a **distribution/build repo** for `dpwoffcBaileys`.
+It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, and is intended to be consumed directly from npm or as a vendored dependency inside the **dpwoffcMD** ecosystem.
 
 </div>
 
@@ -48,20 +54,20 @@ It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, 
 - **Example Usage:**
 
   ```javascript
-  import { ORich } from 'ourin-baileys';
+  import { ORich } from 'dpwoffc-baileys';
 
-  const ourin = new ORich(sock)
+  const dpwoffc = new ORich(sock)
     .addText('Hello from ORich AI!')
     .addSuggest(['Tell me more', 'Next']);
   
-  await ourin.send(jid);
+  await dpwoffc.send(jid);
   ```
 
 ---
 
 ## Table of Contents
 
-- [ourin-baileys](#ourin-baileys)
+- [dpwoffcBaileys](#dpwoffcBaileys)
   - [Modded Baileys v7 — Interactive Messages, AI Rich Responses, Albums & More](#modded-baileys-v7--interactive-messages-ai-rich-responses-albums--more)
   - [Table of Contents](#table-of-contents)
   - [✨ Features](#-features)
@@ -69,7 +75,7 @@ It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, 
   - [🗂️ What’s Inside This Repo](#-whats-inside-this-repo)
   - [📦 Installation](#-installation)
     - [From NPM](#from-npm)
-    - [Using Alias (Recommended for Ourin-MD Bots)](#using-alias-recommended-for-ourin-md-bots)
+    - [Using Alias (Recommended for dpwoffc-MD Bots)](#using-alias-recommended-for-dpwoffc-md-bots)
   - [🛠️ Quick Start](#️-quick-start)
     - [1. Project Setup](#1-project-setup)
     - [2. Install Dependencies](#2-install-dependencies)
@@ -139,7 +145,7 @@ It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, 
   - `sharp`, `jimp`, `audio-decode`, `link-preview-js` for optional media/rich utilities
 
 > [!IMPORTANT]
-> `ourin-baileys` is **ESM-only**. CommonJS projects will need migration or dynamic import wrappers.
+> `dpwoffc-baileys` is **ESM-only**. CommonJS projects will need migration or dynamic import wrappers.
 
 ---
 
@@ -165,7 +171,7 @@ If you are documenting or integrating this project, treat `lib/index.js` and `li
 ### From NPM
 
 ```bash
-npm install ourin-baileys
+npm install dpwoffc-baileys
 ```
 
 Recommended companion packages for examples in this README:
@@ -174,14 +180,14 @@ Recommended companion packages for examples in this README:
 npm install pino qrcode-terminal
 ```
 
-### Using Alias (Recommended for Ourin-MD Bots)
+### Using Alias (Recommended for dpwoffc-MD Bots)
 
 Add to `package.json`:
 
 ```json
 {
   "dependencies": {
-    "ourin": "npm:ourin-baileys@latest"
+    "dpwoffc": "npm:dpwoffc-baileys@latest"
   }
 }
 ```
@@ -193,7 +199,7 @@ npm install
 ```
 
 > [!TIP]
-> Using the alias `ourin` allows you to `import ourin from 'ourin'` without changing existing code.
+> Using the alias `dpwoffc` allows you to `import dpwoffc from 'dpwoffc'` without changing existing code.
 
 > [!NOTE]
 > Peer dependencies such as `sharp`, `jimp`, `audio-decode`, and `link-preview-js` are optional. Install only what your bot features need.
@@ -216,18 +222,18 @@ Ensure `package.json` has `"type": "module"`:
   "name": "my-bot",
   "type": "module",
   "dependencies": {
-    "ourin": "npm:ourin-baileys@latest"
+    "dpwoffc": "npm:dpwoffc-baileys@latest"
   }
 }
 ```
 
 > [!IMPORTANT]
-> **Required**: `"type": "module"` — ourin-baileys is ESM-only. Without this, imports will fail.
+> **Required**: `"type": "module"` — dpwoffc-baileys is ESM-only. Without this, imports will fail.
 
 ### 2. Install Dependencies
 
 ```bash
-npm install ourin-baileys pino qrcode-terminal
+npm install dpwoffc-baileys pino qrcode-terminal
 ```
 
 ### 3. Create `index.js`
@@ -237,7 +243,7 @@ import makeWASocket, {
   useMultiFileAuthState,
   DisconnectReason,
   Browsers,
-} from "ourin-baileys";
+} from "dpwoffc-baileys";
 import pino from "pino";
 import qrcode from "qrcode-terminal";
 
@@ -427,7 +433,7 @@ console.log("Pairing code:", code); // e.g. "A1B2-C3D4"
 **Authentication State:**
 
 ```js
-import { useMultiFileAuthState } from "ourin-baileys";
+import { useMultiFileAuthState } from "dpwoffc-baileys";
 
 const { state, saveCreds } = await useMultiFileAuthState("./session");
 // state.creds → credentials (me, platform, noise keys, etc.)
@@ -442,7 +448,7 @@ import {
   BufferJSON,
   initAuthCreds,
   makeCacheableSignalKeyStore,
-} from "ourin-baileys";
+} from "dpwoffc-baileys";
 
 const credsStore = new Map();
 const keyStoreData = new Map();
@@ -501,7 +507,7 @@ import {
   DisconnectReason,
   fetchLatestBaileysVersion,
   makeCacheableSignalKeyStore,
-} from "ourin-baileys";
+} from "dpwoffc-baileys";
 
 const { version, isLatest } = await fetchLatestBaileysVersion();
 console.log(version, isLatest);
@@ -511,12 +517,12 @@ console.log(version, isLatest);
 
 ### VoIP (Voice Calls)
 
-Modul VoIP kini terintegrasi langsung di `ourin-baileys` menggunakan `VoipClient` dan memanfaatkan *shared socket* (tanpa double pairing). Aset WebAssembly sudah built-in.
+Modul VoIP kini terintegrasi langsung di `dpwoffc-baileys` menggunakan `VoipClient` dan memanfaatkan *shared socket* (tanpa double pairing). Aset WebAssembly sudah built-in.
 
 **Inisiasi VoIP Client:**
 
 ```js
-import { VoipClient, CallState } from "ourin-baileys";
+import { VoipClient, CallState } from "dpwoffc-baileys";
 
 // Lakukan ini SETELAH connection === "open"
 if (!global.voipClient) {
@@ -590,8 +596,8 @@ await sock.sendMessage(jid, {
 await sock.sendMessage(
   jid,
   makeStickerPack({
-    name: "Ourin Starter Pack",
-    publisher: "Ourin",
+    name: "dpwoffc Starter Pack",
+    publisher: "dpwoffc",
     description: "Starter sticker pack",
     stickers: [
       { url: "./stickers/1.webp", emojis: ["🔥"] },
@@ -668,7 +674,7 @@ await sock.sendMessage(jid, {
 await sock.sendMessage(jid, {
   interactiveMessage: {
     title: "Welcome!",
-    footer: "Powered by Ourin",
+    footer: "Powered by dpwoffc",
     buttons: [
       {
         name: "quick_reply",
@@ -688,7 +694,7 @@ await sock.sendMessage(jid, {
         name: "cta_copy",
         buttonParamsJson: JSON.stringify({
           display_text: "Copy Code",
-          copy_code: "OURIN2024",
+          copy_code: "dpwoffc2024",
         }),
       },
     ],
@@ -704,7 +710,7 @@ await sock.sendMessage(jid, {
 await sock.sendMessage(jid, {
   interactiveMessage: {
     title: "Select Category",
-    footer: "Powered by Ourin",
+    footer: "Powered by dpwoffc",
     buttons: [
       {
         name: "single_select",
@@ -784,12 +790,12 @@ await sock.sendList(
   jid,
   "Bot Info",
   [
-    ["Name", "Ourin AI"],
+    ["Name", "dpwoffc AI"],
     ["Version", "2.4.0"],
     ["Developer", "Zann"],
   ],
   quoted,
-  { footer: "© Ourin AI" },
+  { footer: "© dpwoffc AI" },
 );
 ```
 
@@ -802,12 +808,12 @@ await sock.sendCodeBlock(
 function sayHello(name) {
     return greeting + " " + name
 }
-sayHello("Ourin")`,
+sayHello("dpwoffc")`,
   quoted,
   {
     language: "javascript",
     title: "Example Code",
-    footer: "Powered by Ourin",
+    footer: "Powered by dpwoffc",
   },
 );
 ```
@@ -888,7 +894,7 @@ func main() {
     language: "go",
     title: "Go Example",
     text: "Here is a Go code snippet:",
-    footer: "Powered by Ourin",
+    footer: "Powered by dpwoffc",
   },
 );
 ```
@@ -997,13 +1003,13 @@ await sock.sendLinkV2(
   "Search results:\n- {{IE_0}}Official docs{{/IE_0}}\n- {{IE_1}}GitHub repo{{/IE_1}}",
   [
     {
-      url: "https://www.npmjs.com/package/ourin-baileys",
+      url: "https://www.npmjs.com/package/dpwoffc-baileys",
       displayName: "Official docs",
       sourceDisplayName: "npm",
       sourceSubtitle: "package registry",
     },
     {
-      url: "https://github.com/LuckyArch/ourin-baileys",
+      url: "https://github.com/LuckyArch/dpwoffc-baileys",
       displayName: "GitHub repo",
       sourceDisplayName: "github",
       sourceSubtitle: "source hosting",
@@ -1011,7 +1017,7 @@ await sock.sendLinkV2(
   ],
   quoted,
   {
-    headerText: "ourin-baileys",
+    headerText: "dpwoffc-baileys",
     footer: "Reference links",
     searchEngine: "MAME",
   },
@@ -1085,13 +1091,13 @@ await sock.sendMessage(jid, {
     title: "Wireless Headphones",
     description: "High quality bluetooth headphones",
     productId: "WH-001",
-    retailerId: "ourin-shop",
+    retailerId: "dpwoffc-shop",
     url: "https://example.com/product",
     priceAmount1000: 299000,
     currencyCode: "IDR",
     thumbnail: { url: "https://example.com/product.jpg" },
     body: "Check out this product!",
-    footer: "Ourin Shop",
+    footer: "dpwoffc Shop",
     buttons: [
       {
         name: "quick_reply",
@@ -1575,7 +1581,7 @@ import {
 
   // Types
   WASocket,
-} from "ourin-baileys";
+} from "dpwoffc-baileys";
 ```
 
 > [!NOTE]
@@ -1608,7 +1614,7 @@ Important build notes:
 
 ## 🔀 Differences from Official Baileys
 
-| Area                 | Official Baileys v7 | ourin-baileys                            |
+| Area                 | Official Baileys v7 | dpwoffc-baileys                            |
 | -------------------- | ------------------- | ---------------------------------------- |
 | Interactive messages | No native support   | Full support via Dugong                  |
 | Album messages       | Not supported       | Multi-media albums                       |
@@ -1654,12 +1660,12 @@ MIT © [LuckyArch](https://github.com/LuckyArch)
 
 **Made with 💚 by Zann**
 
-[⭐ Star this repo](https://github.com/LuckyArch/ourin-baileys) · [🐛 Report Bug](https://github.com/LuckyArch/ourin-baileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/ourin-baileys/issues)
+[⭐ Star this repo](https://github.com/LuckyArch/dpwoffc-baileys) · [🐛 Report Bug](https://github.com/LuckyArch/dpwoffc-baileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/dpwoffc-baileys/issues)
 
 </div>
 Package Sidebar
 Install
-npm i ourin-baileys
+npm i dpwoffc-baileys
 
 
 Weekly Downloads
@@ -1693,4 +1699,4 @@ Policies
 Terms of Use
 Code of Conduct
 Privacy
-Viewing ourin-baileys version 9.0.21
+Viewing dpwoffc-baileys version 9.0.21
