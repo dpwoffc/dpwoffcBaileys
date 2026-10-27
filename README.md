@@ -218,7 +218,7 @@ Ensure `package.json` has `"type": "module"`:
   "name": "my-bot",
   "type": "module",
   "dependencies": {
-    "dpwoffc": "npm:dpwoffcBaileys@latest"
+    "dpwoffc": "github:dpwoffcBaileys@latest"
   }
 }
 ```
