@@ -15,9 +15,6 @@
 **A modded build of [WhiskeySockets/Baileys](https://github.com/WhiskeySockets/Baileys)**
 with native support for interactive messages, album messages, unified rich responses, newsletter helpers, status mentions, and additional business/community utilities.
 
-**Rebuild and add somethink from [dpwoffcBaileys] (https://www.npmjs.com/package/dpwoffcBaileys)**
-Add a somethink about WhatsApp Business f   
-
 This repository is a **distribution/build repo** for `dpwoffcBaileys`.
 It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, and is intended to be consumed directly from npm or as a vendored dependency inside the **dpwoffcMD** ecosystem.
 
@@ -218,7 +215,7 @@ Ensure `package.json` has `"type": "module"`:
   "name": "my-bot",
   "type": "module",
   "dependencies": {
-    "dpwoffc": "npm:dpwoffcBaileys@latest"
+    "dpwoffc": "github:dpwoffcBaileys@latest"
   }
 }
 ```
@@ -1698,7 +1695,7 @@ Important build notes:
 
 ## 📄 License
 
-MIT © [LuckyArch](https://github.com/LuckyArch)
+MIT © [@dpwoffc](https://github.com/dpwoffc)
 
 > [!CAUTION]
 > This library is for **educational purposes**. Ensure compliance with WhatsApp Terms of Service.
@@ -1707,45 +1704,8 @@ MIT © [LuckyArch](https://github.com/LuckyArch)
 
 <div align="center">
 
-**Made with 💚 by Zann**
+**Made with 💚 by @dpwoffc & ChatGPT**
 
-[⭐ Star this repo](https://github.com/LuckyArch/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/LuckyArch/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/dpwoffcBaileys/issues)
+[⭐ Star this repo](https://github.com/dpwoffc/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/dpwoffc/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/dpwoffc/dpwoffcBaileys/issues)
 
 </div>
-Package Sidebar
-Install
-npm i dpwoffcBaileys
-
-
-Weekly Downloads
-2,694
-
-Version
-9.0.21
-
-License
-MIT
-
-Last publish
-2 months ago
-
-Collaborators
-hanya_zann
-Analyze security with SocketCheck bundle sizeView package healthExplore dependencies
-Report malware
-Footer
-Support
-Help
-Advisories
-Status
-Contact npm
-Company
-About
-Blog
-Press
-Terms & Policies
-Policies
-Terms of Use
-Code of Conduct
-Privacy
-Viewing dpwoffcBaileys version 9.0.21
