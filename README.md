@@ -1661,7 +1661,7 @@ Important build notes:
 
 ## 📄 License
 
-MIT © [LuckyArch](https://github.com/LuckyArch)
+MIT © [@dpwoffc](https://github.com/dpwoffc)
 
 > [!CAUTION]
 > This library is for **educational purposes**. Ensure compliance with WhatsApp Terms of Service.
@@ -1670,15 +1670,12 @@ MIT © [LuckyArch](https://github.com/LuckyArch)
 
 <div align="center">
 
-**Made with 💚 by Zann**
+**Made with 💚 by @dpwoffc & ChatGPT**
 
-[⭐ Star this repo](https://github.com/LuckyArch/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/LuckyArch/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/LuckyArch/dpwoffcBaileys/issues)
+[⭐ Star this repo](https://github.com/dpwoffc/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/dpwoffc/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/dpwoffc/dpwoffcBaileys/issues)
 
 </div>
 Package Sidebar
-Install
-npm i dpwoffcBaileys
-
 
 Weekly Downloads
 2,694
@@ -1693,7 +1690,7 @@ Last publish
 2 months ago
 
 Collaborators
-hanya_zann
+@dpwoffc
 Analyze security with SocketCheck bundle sizeView package healthExplore dependencies
 Report malware
 Footer
@@ -1701,7 +1698,7 @@ Support
 Help
 Advisories
 Status
-Contact npm
+Contact social media 
 Company
 About
 Blog
@@ -1711,4 +1708,4 @@ Policies
 Terms of Use
 Code of Conduct
 Privacy
-Viewing dpwoffcBaileys version 9.0.21
+Viewing dpwoffcBaileys
