@@ -292,6 +292,31 @@ export type AnyRegularMessageContent = (
         additionalText?: string;
       };
     }
+  | {
+      businessFlowMessage: {
+        /** Text shown in the interactive message body. */
+        body: string;
+        footer?: string;
+        header?: string;
+        /** Optional media for the interactive header; provide at most one. */
+        image?: WAMediaUpload;
+        video?: WAMediaUpload;
+        gifPlayback?: boolean;
+        /** Defaults to galaxy_message, the native WhatsApp Flow button type. */
+        buttonName?: string;
+        /** ID of the published WhatsApp Flow used by galaxy_message. */
+        flowId: string;
+        /** Optional token returned with the user's Flow response. */
+        flowToken?: string;
+        flowCta: string;
+        flowAction?: "navigate" | "data_exchange";
+        /** Initial screen and optional data for navigate actions. */
+        flowActionPayload?: Record<string, unknown>;
+        flowMetadata?: Record<string, unknown>;
+        /** Extra native Flow parameters, or a JSON string containing them. */
+        buttonParams?: Record<string, unknown> | string;
+      };
+    }
   | ({
       stickerPack: StickerPackContent;
     } & Mentionable &

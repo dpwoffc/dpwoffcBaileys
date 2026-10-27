@@ -11,6 +11,13 @@ export declare class Dugong {
     sock: any,
   );
   detectType(content: any): string | null;
+  handleBusinessFlow(
+    content: any,
+    jid: string,
+    quoted: any,
+  ): Promise<{
+    interactiveMessage: proto.Message.IInteractiveMessage;
+  }>;
   handleBusinessPayment(content: any): Promise<{
     interactiveMessage: proto.Message.IInteractiveMessage;
   }>;
