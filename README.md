@@ -15,9 +15,6 @@
 **A modded build of [WhiskeySockets/Baileys](https://github.com/WhiskeySockets/Baileys)**
 with native support for interactive messages, album messages, unified rich responses, newsletter helpers, status mentions, and additional business/community utilities.
 
-**Rebuild and add somethink from [dpwoffcBaileys](https://www.npmjs.com/package/dpwoffcBaileys)**
-Add a somethink about WhatsApp Business features  
-
 This repository is a **distribution/build repo** for `dpwoffcBaileys`.
 It ships compiled runtime files in `lib/` and protobuf artifacts in `WAProto/`, and is intended to be consumed directly from npm or as a vendored dependency inside the **dpwoffcMD** ecosystem.
 
