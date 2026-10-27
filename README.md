@@ -1348,40 +1348,6 @@ await sock.sendMessage(jid, {
 });
 ```
 
-#### Business Flow form message
-
-Send a `galaxy_message` form button with custom Flow parameters. Add an `image` or `video` for a media header, or omit both for a text-only header. The Flow ID and screen must be configured for the sending WhatsApp Business account.
-
-```js
-await sock.sendMessage(jid, {
-  businessFlowMessage: {
-    body: "How was your experience?",
-    footer: "Your feedback helps us improve.",
-    image: { url: "https://example.com/feedback.jpg" },
-    // Omit image and video for a text-only message, or use video instead:
-    // video: { url: "https://example.com/feedback.mp4" },
-    buttonParams: {
-      flowId: "YOUR_PUBLISHED_FLOW_ID",
-      // flowToken: "feedback-ticket-123", // optional, useful to match replies
-      flowCta: "Rate experience",
-      flowAction: "navigate",
-      flowActionPayload: {
-        screen: "SATISFACTION_SCREEN",
-        data: { ticket_id: "1815424766317664" },
-      },
-      flowMetadata: {
-        flow_json_version: 700,
-        data_api_protocol: null,
-        data_api_version: null,
-        flow_name: "Customer satisfaction",
-        creation_source: "CUSTOMER_SUPPORT",
-        categories: [],
-      },
-    },
-  },
-});
-```
-
 ```js
 // Catalog
 const { products, nextPageCursor } = await sock.getCatalog({
