@@ -1675,37 +1675,3 @@ MIT © [@dpwoffc](https://github.com/dpwoffc)
 [⭐ Star this repo](https://github.com/dpwoffc/dpwoffcBaileys) · [🐛 Report Bug](https://github.com/dpwoffc/dpwoffcBaileys/issues) · [💡 Request Feature](https://github.com/dpwoffc/dpwoffcBaileys/issues)
 
 </div>
-Package Sidebar
-
-Weekly Downloads
-2,694
-
-Version
-9.0.21
-
-License
-MIT
-
-Last publish
-2 months ago
-
-Collaborators
-@dpwoffc
-Analyze security with SocketCheck bundle sizeView package healthExplore dependencies
-Report malware
-Footer
-Support
-Help
-Advisories
-Status
-Contact social media 
-Company
-About
-Blog
-Press
-Terms & Policies
-Policies
-Terms of Use
-Code of Conduct
-Privacy
-Viewing dpwoffcBaileys
