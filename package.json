@@ -1,8 +1,9 @@
 {
   "name": "dpwoffc-baileys",
   "type": "module",
-  "version": "9.0.21",
+  "version": "1.0.0",
   "description": "Modded Baileys v7 with interactive message, album, newsletter, and VoIP support",
+  "author": "@dpwoffc",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,6 +15,7 @@
     "build": "node -e \"const{execSync:e}=require('child_process');try{e('npx tsc -P tsconfig.build.json',{stdio:'inherit'})}catch(x){};e('npx tsc-esm-fix --tsconfig=tsconfig.build.json --ext=.js',{stdio:'inherit'})\""
   },
   "keywords": [
+    "dpwoffc",
     "baileys",
     "whatsapp",
     "whatsapp-api",
